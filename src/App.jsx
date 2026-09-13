@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import MenuItems from "./pages/MenuItems";
 import About from "./pages/About";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   const [search, setSearch] = useState("");
@@ -62,6 +63,7 @@ export default function App() {
           />
         }
       />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
